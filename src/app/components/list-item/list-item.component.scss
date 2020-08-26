@@ -1,0 +1,37 @@
+.task-item {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-color: #ccc;
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px 5px;
+    -webkit-box-shadow: -5px 3px 6px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 3px 6px -4px rgba(0,0,0,0.75);
+    box-shadow: -5px 3px 6px -4px rgba(0,0,0,0.75);
+    & .description {
+      font-size: 20px;
+      color: #696969;
+    }
+    & .actions {
+      display: flex;
+    }
+    & .btn {
+        border: none;
+        width: 100px;
+        margin-left: 5px;
+        border-radius: 4px;
+        color: #fff;
+        padding: 5px 3px;
+        &.btn-edit {
+          background: #FFA500;
+        }
+        &.btn-remove {
+          background: #FF6347;
+        }
+        &.btn-done {
+          background: #32CD32;
+        }
+      }
+    
+    }

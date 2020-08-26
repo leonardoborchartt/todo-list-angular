@@ -1,0 +1,7 @@
+<div class="container">
+    <input type="text" class="text-input" [(ngModel)]="textInput" placeholder="Insira o nome da tarefa"/>
+    <button type="button" class="btn" (click)="createTask()">Adicionar</button>
+</div>
+
+
+<app-list-item *ngFor= "let task of getTasks()" [task]="task" ></app-list-item>

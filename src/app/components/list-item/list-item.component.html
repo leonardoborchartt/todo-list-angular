@@ -1,0 +1,8 @@
+<div class="task-item">
+    <div class="description">{{task.description}}</div>
+    <div class="actions" *ngIf="!isDone">
+      <button type="button" class="btn btn-edit">Editar</button>
+      <button type="button" class="btn btn-remove" (click)="removeTask()">Remover</button>
+      <button type="button" class="btn btn-done" (click)="doneTask()">Concluido</button>
+    </div>
+  </div>
